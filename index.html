@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menuat</title>
     <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link rel="stylesheet" href="css/menuat.css" />
     <script src="js/vendor/modernizr.js"></script>
   </head>
 
@@ -14,6 +16,7 @@
     <!-- Navigation Bar -->
 
     <div class='fixed'>
+
       <nav class='top-bar' data-topbar>
 
         <ul class='title-area'>
@@ -25,27 +28,57 @@
 
       <section class='top-bar-section'>
         <ul class='right'>
-          <li><a href="">About</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Support</a></li>
-          <li><a href="tel:+19044950616">904.495.0616</a></li>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">Facebook</a></li>
+
+          <li><a href="#">About</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Support</a></li>
+
+          <li>
+            <a href="tel:+19044950616">
+              <span class='show-for-small-only'>Contact</span>
+              <span class='hide-for-small-only'>904.495.0616</span>
+            </a>
+          </li>
+
+          <li class='hide-for-small-only'>
+            <a href='#'>Get Started</a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fi-social-twitter"></i>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fi-social-facebook"></i>
+            </a>
+          </li>
+
         </ul>
       </section>
 
       </nav>
+
     </div>
 
     <!-- End Navigation Bar -->
 
     <!-- Hero -->
-    <div id="hero">
+    <div id="hero" class='panel'>
 
-      <div class='row'>
+      <div class="row">
+
         <h1>A wall menu that's flexible, a web menu that's always updated.</h1>
-        <a href="#">Start building your menu</a>
-        <a href="#">Watch our short film</a>
+
+        <div class="medium-6 columns">
+          <a href="#" class='button radius alert'>Start building your menu</a>
+        </div>
+
+        <div class="medium-6 columns">
+          <a href="#" class='button radius secondary'><i class='fi-play'></i> Watch our short film</a>
+        </div>
       </div>
 
     </div>
@@ -54,30 +87,30 @@
 
     <!-- Features -->
 
-    <div id='features'>
+    <div id='features' class='panel text-center'>
 
       <div class='row'>
-      
-        <div class=''>
+
+        <div class='large-3 columns'>
           <h2>Experiment</h2>
           <p>with pricing promotions, list order, and more</p>
         </div>
-      
-        <div class=''>
+
+        <div class='large-3 columns'>
           <h2>Engage</h2>
           <p>Menu Searching helps your customers find their favorite foods faster</p>
         </div>
-      
-        <div class=''>
+
+        <div class='large-3 columns'>
           <h2>Seamlessly</h2>
           <p>coordinate web and in-store experiences</p>
         </div>
-      
-        <div class=''>
+
+        <div class='large-3 columns'>
           <h2>Replace</h2>
           <p>to-go menus with an online presence that's never out of date, and always on hand</p>
         </div>
-      
+
       </div>
 
     </div>
@@ -86,101 +119,109 @@
 
     <!-- Call-to-Action -->
 
-    <div id='call-to-action'>
-      <div class='row hide-for-small-only'>
-        <a href="#">Start building your menu</a>
-        <p>See it in action today!</p>
+    <div id='call-to-action' class='panel hide-for-small-only'>
+
+      <div class="row">
+        <div class='large-6 columns'>
+          <a href="#" class='button radius success'>Start building your menu</a>
+        </div>
+        <div class='large-6 columns'>
+          <p>See it in action today!</p>
+        </div>
       </div>
+
     </div>
 
     <!-- End Call-to-Action -->
 
     <!-- Testimonials -->
 
-    <div id='testimonials'>
-      <div class='row'>
-        <h3>What they're saying</h3>
-      
-        <p>[Image goes here]</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque leo lorem, quis bibendum erat venenatis ac. Vestibulum consectetur velit id volutpat pulvinar. In quam mi, semper a nunc eleifend, luctus pretium felis. Cras eleifend dui in lorem sagittis aliquam.</p>
-        
-        <p>Jonathan Smith</p>
-        <p>Owner, Chamblin's Uptown</p>
-      </div>
+    <div id='testimonials' class='panel'>
+
+      <h3>What they're saying</h3>
+    
+      <p>[Image goes here]</p>
+
+      <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc scelerisque leo lorem, quis bibendum erat venenatis ac. Vestibulum consectetur velit id volutpat pulvinar. In quam mi, semper a nunc eleifend, luctus pretium felis. Cras eleifend dui in lorem sagittis aliquam. <cite>Jonathan Smith, Owner, Chamblin's Uptown</cite></blockquote>
+
     </div>
 
     <!-- End Testimonials -->
 
     <!-- Featured On -->
 
-    <div id='featured-on'>
-      <div class='row'>
-        <p>Featured on:</p>
-        
-        <ul class='inline-list'>
-          <li>Entrepeneur Magazine</li>
-          <li>WJCT</li>
-          <li>Reuters Insider</li>
-          <li>Cloudant</li>
-          <li>Daily Record</li>
-        </ul>
-      </div>
+    <div id='featured-on' class='panel'>
+
+      <p>Featured on:</p>
+      
+      <ul class='inline-list'>
+        <li>Entrepeneur Magazine</li>
+        <li>WJCT</li>
+        <li>Reuters Insider</li>
+        <li>Cloudant</li>
+        <li>Daily Record</li>
+      </ul>
+
     </div>
 
     <!-- End Featured On -->
 
     <!-- Tagline -->
 
-    <div id='tagline'>
-      <div class='row'>
-        <p>Monthly plans starting at only $99</p>
-      </div>
+    <div id='tagline' class='panel text-center'>
+
+      <p>Monthly plans starting at only <h1>$99</h1></p>
+
     </div>
 
     <!-- End Tagline -->
 
     <!-- Information -->
 
-    <div id='information'>
+    <div id='information' class='panel'>
+  
       <div class='row'>
-      
-        <a href="#">Start building your menu</a>
-      
+
+        <a href="#" class='button radius expand'>Start building your menu</a>
+            
         <form>
-          <div class='row'>
-    
-            <div class=''>
+          <div class='row collapse'>
+        
+            <div class='small-10 columns'>
               <input type="email" placeholder="Sign up for email updates">
             </div>
             
-            <div class=''>
+            <div class='small-2 columns'>
               <input class='button postfix' type="submit" value='Go'>
             </div>
-    
+          
           </div>
         </form>
-    
-        <div class=''>
+        
+        <div class='row'>
 
-          <ul class='inline-list'>
-            <li>Our Team</li>
-            <li>Press</li>
-            <li>Contact</li>
-            <li>Support</li>
-            <li>FAQ</li>
-          </ul>
+          <div class='small-6 columns'>
+            <ul>
+              <li>Our Team</li>
+              <li>Press</li>
+              <li>Contact</li>
+              <li>Support</li>
+              <li>FAQ</li>
+            </ul>
+          </div>
+              
+          <div class='small-6 columns text-right'>
+            <li><a href="#"><i class="fi-social-twitter"></i></a></li>
+            <li><a href="#"><i class="fi-social-facebook"></i></a></li>
           
+            <a href="#">Privacy Terms</a>
+            <p><small>2014 Menuat. All rights reserved.</small></p>
+          </div>
+
         </div>
-    
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-    
-        <a href="#">Privacy Terms</a>
-    
-        <small>2014 Menuat. All rights reserved.</small>
-      
+
       </div>
+
     </div>
 
     <!-- End Information -->
